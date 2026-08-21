@@ -40,8 +40,23 @@ export function renderCalculatorPage(slug) {
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12">
         
         <!-- Calculator Form (Col 1-7) -->
-        <div class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm">
-          <div class="flex items-center justify-between pb-4 mb-6 border-b border-slate-100">
+        <div class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+          
+          <!-- How It Works & Input Guide Box -->
+          <div class="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200/80 space-y-2 text-xs">
+            <div class="flex items-center gap-2 font-bold text-emerald-950 text-sm">
+              <i data-lucide="help-circle" class="w-4 h-4 text-emerald-700"></i>
+              <span>How This Calculator Works & Input Guidelines</span>
+            </div>
+            <p class="text-slate-700 leading-relaxed">
+              ${calc.intro}
+            </p>
+            <div class="pt-1 text-slate-600">
+              <strong class="text-emerald-950 font-semibold">How to use:</strong> Adjust the input parameters below (such as land area, target rates, or seed/soil metrics). The calculator automatically computes verified agronomic results with a step-by-step mathematical breakdown.
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between pb-4 border-b border-slate-100">
             <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
               <i data-lucide="sliders" class="w-5 h-5 text-emerald-700"></i>
               <span>Input Parameters</span>
