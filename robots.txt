@@ -2,4 +2,4 @@
 Allow: /
 Disallow:
 
-Sitemap: https://agriplan-global.org/sitemap.xml
+Sitemap: https://agriplan-global-pjd8.vercel.app/sitemap.xml

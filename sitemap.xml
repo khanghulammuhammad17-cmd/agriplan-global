@@ -1,57 +1,322 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core Home & Hubs -->
   <url>
-    <loc>https://agriplan-global.org/</loc>
-    <changefreq>weekly</changefreq>
+    <loc>https://agriplan-global-pjd8.vercel.app/</loc>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://agriplan-global.org/#/tools</loc>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/crop-planner</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://agriplan-global.org/#/crop-calendar</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://agriplan-global.org/#/fruit-calendar</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://agriplan-global.org/#/vegetable-calendar</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://agriplan-global.org/#/crop-planner</loc>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/crop-calendar</loc>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://agriplan-global.org/#/guides</loc>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/fruit-calendar</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/vegetable-calendar</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/guides</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Category 1: Crop & Seed Calculators -->
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/seed-rate-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/seeding-density-calculator</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://agriplan-global.org/#/methodology</loc>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/plant-population-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/crop-yield-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/harvest-yield-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/crop-area-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/crop-spacing-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/germination-rate-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Category 2: Soil & Fertilizer Calculators -->
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/fertilizer-requirement-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/npk-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/nitrogen-requirement-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/phosphorus-requirement-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/potassium-requirement-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/fertilizer-application-rate-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/nutrient-to-fertilizer-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/lime-requirement-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/compost-application-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Category 3: Water & Irrigation Calculators -->
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/eto-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/crop-water-requirement-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/irrigation-water-requirement-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/irrigation-scheduling-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/irrigation-runtime-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/effective-rainfall-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/water-volume-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Category 4: Farm & Economics Calculators -->
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/farm-area-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/agriculture-unit-converter</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/sprayer-calibration-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/farm-input-cost-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/crop-production-cost-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/tools/farm-profit-roi-calculator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Agronomic Crop Guides -->
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/crops/wheat</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/crops/maize</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/crops/rice</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/crops/soybean</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/crops/tomato</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/crops/potato</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/crops/onion</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/crops/apple</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/crops/mango</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 9 Research Guides -->
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/guides/crop-planning</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/guides/seed-selection</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/guides/soil-management</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/guides/fertilizer-management</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/guides/irrigation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/guides/sustainable-agriculture</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/guides/precision-agriculture</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/guides/farm-economics</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/guides/harvest-planning</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Legal & Methodology -->
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/methodology</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://agriplan-global.org/#/about</loc>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/about</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://agriplan-global.org/#/contact</loc>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/contact</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://agriplan-global.org/#/disclaimer</loc>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/terms</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://agriplan-global-pjd8.vercel.app/#/disclaimer</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>

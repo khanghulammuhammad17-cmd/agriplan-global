@@ -1,4 +1,4 @@
-﻿import { getCalculatorBySlug } from '../data/calculatorsData.js';
+import { getCalculatorBySlug } from '../data/calculatorsData.js';
 import { renderDynamicFormFields } from './calcForms.js';
 import { executeCalculator, formatResultCards } from './calcRunner.js';
 
@@ -194,6 +194,66 @@ export function renderCalculatorPage(slug) {
             </div>
           </div>
         ` : ''}
+
+        <!-- Internal Agronomic Knowledge Hub & Planning Links -->
+        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200 space-y-6">
+          <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+            <h3 class="text-sm font-bold uppercase tracking-wider text-slate-900 flex items-center gap-2">
+              <i data-lucide="compass" class="w-4 h-4 text-emerald-700"></i>
+              <span>Related Agronomic Planning Hubs & Guides</span>
+            </h3>
+            <a href="sitemap.xml" target="_blank" class="text-[11px] font-mono text-emerald-700 hover:text-emerald-900 hover:underline flex items-center gap-1">
+              <i data-lucide="file-code" class="w-3.5 h-3.5"></i>
+              <span>View XML Sitemap</span>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-xs">
+            <!-- Col 1: Calendars -->
+            <div class="space-y-2">
+              <span class="font-bold text-slate-800 uppercase tracking-wider text-[11px] block">Seasonal Calendars</span>
+              <ul class="space-y-1.5 text-slate-600">
+                <li><a href="#/crop-calendar" class="hover:text-emerald-700 hover:underline">&bull; Seasonal Crop Calendar</a></li>
+                <li><a href="#/fruit-calendar" class="hover:text-emerald-700 hover:underline">&bull; Fruit Growing Calendar</a></li>
+                <li><a href="#/vegetable-calendar" class="hover:text-emerald-700 hover:underline">&bull; Vegetable Sowing Calendar</a></li>
+                <li><a href="#/crop-planner" class="hover:text-emerald-700 hover:underline font-semibold text-emerald-800">&bull; Interactive Crop Planner</a></li>
+              </ul>
+            </div>
+
+            <!-- Col 2: Farming Guides -->
+            <div class="space-y-2">
+              <span class="font-bold text-slate-800 uppercase tracking-wider text-[11px] block">Related Guides</span>
+              <ul class="space-y-1.5 text-slate-600">
+                <li><a href="#/guides/seed-selection" class="hover:text-emerald-700 hover:underline">&bull; Seed & PLS Optimization</a></li>
+                <li><a href="#/guides/crop-planning" class="hover:text-emerald-700 hover:underline">&bull; Crop Rotation & Planning</a></li>
+                <li><a href="#/guides/soil-management" class="hover:text-emerald-700 hover:underline">&bull; Soil Health & CEC Guide</a></li>
+                <li><a href="#/guides/fertilizer-management" class="hover:text-emerald-700 hover:underline">&bull; 4R Fertilizer Stewardship</a></li>
+              </ul>
+            </div>
+
+            <!-- Col 3: Crop Agronomy Profiles -->
+            <div class="space-y-2">
+              <span class="font-bold text-slate-800 uppercase tracking-wider text-[11px] block">Crop Profiles</span>
+              <ul class="space-y-1.5 text-slate-600">
+                <li><a href="#/crops/wheat" class="hover:text-emerald-700 hover:underline">&bull; Wheat Agronomy Guide</a></li>
+                <li><a href="#/crops/maize" class="hover:text-emerald-700 hover:underline">&bull; Maize Field Guide</a></li>
+                <li><a href="#/crops/rice" class="hover:text-emerald-700 hover:underline">&bull; Rice Management Guide</a></li>
+                <li><a href="#/crops/soybean" class="hover:text-emerald-700 hover:underline">&bull; Soybean Production Guide</a></li>
+              </ul>
+            </div>
+
+            <!-- Col 4: Standards & Search -->
+            <div class="space-y-2">
+              <span class="font-bold text-slate-800 uppercase tracking-wider text-[11px] block">Platform Standards</span>
+              <ul class="space-y-1.5 text-slate-600">
+                <li><a href="#/methodology" class="hover:text-emerald-700 hover:underline">&bull; FAO & USDA Methodologies</a></li>
+                <li><a href="#/tools" class="hover:text-emerald-700 hover:underline">&bull; All 30 Farm Calculators</a></li>
+                <li><a href="#/disclaimer" class="hover:text-emerald-700 hover:underline">&bull; Agricultural Disclaimer</a></li>
+                <li><a href="sitemap.xml" target="_blank" class="hover:text-emerald-700 hover:underline text-emerald-800 font-semibold">&bull; XML Sitemap (SEO)</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
       </div>
 
