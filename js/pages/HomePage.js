@@ -1,4 +1,4 @@
-﻿import { CALCULATORS_DATA, CALCULATOR_CATEGORIES } from '../data/calculatorsData.js';
+import { CALCULATORS_DATA, CALCULATOR_CATEGORIES } from '../data/calculatorsData.js';
 import { CROPS_DATA } from '../data/cropsData.js';
 import { GUIDES_DATA } from '../data/guidesData.js';
 import { FAQS_DATA } from '../data/faqsData.js';
@@ -12,6 +12,11 @@ export function renderHomePage() {
       <!-- 2. HERO SECTION -->
       <!-- ========================================== -->
       <section class="relative bg-gradient-to-b from-emerald-950 via-emerald-900 to-slate-900 text-white overflow-hidden pt-12 pb-20 sm:pb-28 lg:pt-16 lg:pb-36 border-b border-emerald-800/50">
+        <!-- Ambient Aurora Glowing Light Orbs -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none animate-aurora"></div>
+        <div class="absolute top-1/2 right-0 w-80 h-80 bg-teal-400/15 rounded-full blur-3xl pointer-events-none animate-aurora-delayed"></div>
+        <div class="absolute -bottom-24 left-1/3 w-96 h-96 bg-emerald-600/15 rounded-full blur-3xl pointer-events-none animate-aurora"></div>
+
         <!-- Subtle agricultural pattern overlay -->
         <div class="absolute inset-0 bg-[radial-gradient(#10b98115_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
 
@@ -20,8 +25,8 @@ export function renderHomePage() {
             
             <!-- Left Hero Content -->
             <div class="lg:col-span-7 space-y-6">
-              <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-800/60 border border-emerald-700/80 text-emerald-300 text-xs font-semibold backdrop-blur-xs">
-                <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-400"></i>
+              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-800/60 border border-emerald-700/80 text-emerald-300 text-xs font-semibold backdrop-blur-md shadow-inner">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 radar-beacon mr-0.5"></span>
                 <span>Peer-Reviewed Agricultural Algorithms & FAO Standards</span>
               </div>
 
@@ -40,16 +45,16 @@ export function renderHomePage() {
 
               <!-- Hero CTA Buttons -->
               <div class="flex flex-wrap items-center gap-3 pt-2">
-                <a href="#/tools" class="px-5 py-3.5 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-emerald-950 font-bold text-sm shadow-lg shadow-emerald-500/20 transition-all flex items-center gap-2 group">
+                <a href="#/tools" class="btn-shimmer px-6 py-3.5 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-emerald-950 font-bold text-sm shadow-xl shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:-translate-y-0.5 transition-all flex items-center gap-2 group">
                   <i data-lucide="calculator" class="w-4 h-4"></i>
                   <span>Explore Farm Calculators</span>
                   <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
                 </a>
-                <a href="#/crop-calendar" class="px-5 py-3.5 rounded-2xl bg-emerald-900/80 hover:bg-emerald-800 text-white font-semibold text-sm border border-emerald-700/80 backdrop-blur-xs transition-all flex items-center gap-2">
+                <a href="#/crop-calendar" class="px-5 py-3.5 rounded-2xl bg-emerald-900/80 hover:bg-emerald-800 text-white font-semibold text-sm border border-emerald-700/80 backdrop-blur-md hover:-translate-y-0.5 transition-all flex items-center gap-2">
                   <i data-lucide="calendar" class="w-4 h-4 text-emerald-300"></i>
                   <span>View Crop Calendar</span>
                 </a>
-                <a href="#/guides" class="px-5 py-3.5 rounded-2xl bg-slate-800/80 hover:bg-slate-700 text-slate-200 font-semibold text-sm border border-slate-700 backdrop-blur-xs transition-all flex items-center gap-2">
+                <a href="#/guides" class="px-5 py-3.5 rounded-2xl bg-slate-800/80 hover:bg-slate-700 text-slate-200 font-semibold text-sm border border-slate-700 backdrop-blur-md hover:-translate-y-0.5 transition-all flex items-center gap-2">
                   <i data-lucide="book-open" class="w-4 h-4 text-emerald-400"></i>
                   <span>Explore Farming Guides</span>
                 </a>
@@ -57,20 +62,20 @@ export function renderHomePage() {
 
               <!-- Factual Platform Badges -->
               <div class="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-emerald-800/60 text-xs text-slate-300">
-                <div>
-                  <div class="text-xl font-bold text-white font-mono">30</div>
+                <div class="p-3 rounded-2xl bg-emerald-950/40 border border-emerald-800/40 backdrop-blur-xs">
+                  <div class="text-2xl font-bold text-white font-mono">30</div>
                   <span class="text-[11px] text-slate-400">Farm Calculators</span>
                 </div>
-                <div>
-                  <div class="text-xl font-bold text-white font-mono">12</div>
+                <div class="p-3 rounded-2xl bg-emerald-950/40 border border-emerald-800/40 backdrop-blur-xs">
+                  <div class="text-2xl font-bold text-white font-mono">12</div>
                   <span class="text-[11px] text-slate-400">Months Planning</span>
                 </div>
-                <div>
-                  <div class="text-xl font-bold text-white font-mono">4</div>
+                <div class="p-3 rounded-2xl bg-emerald-950/40 border border-emerald-800/40 backdrop-blur-xs">
+                  <div class="text-2xl font-bold text-white font-mono">4</div>
                   <span class="text-[11px] text-slate-400">Core Categories</span>
                 </div>
-                <div>
-                  <div class="text-xl font-bold text-emerald-400 font-mono">Free</div>
+                <div class="p-3 rounded-2xl bg-emerald-950/40 border border-emerald-800/40 backdrop-blur-xs">
+                  <div class="text-2xl font-bold text-emerald-400 font-mono">Free</div>
                   <span class="text-[11px] text-slate-400">Open Access</span>
                 </div>
               </div>
@@ -78,7 +83,7 @@ export function renderHomePage() {
 
             <!-- Right Hero Visual with Authentic Agriculture Imagery & Floating Info Cards -->
             <div class="lg:col-span-5 relative">
-              <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-emerald-700/60 aspect-4/3 sm:aspect-square lg:aspect-4/3 group">
+              <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-emerald-500/40 aspect-4/3 sm:aspect-square lg:aspect-4/3 group ring-4 ring-emerald-500/10">
                 <img 
                   src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1000&q=80" 
                   alt="Aerial agricultural fields with modern farm machinery for the Global Agriculture Planning Platform"
@@ -91,46 +96,46 @@ export function renderHomePage() {
               </div>
 
               <!-- Floating Info Card 1: Farm Area -->
-              <div class="absolute -top-4 -left-4 sm:left-4 bg-slate-900/90 backdrop-blur-md border border-emerald-600/50 rounded-2xl p-3 shadow-xl text-xs text-white flex items-center gap-3 animate-float">
-                <div class="p-2 rounded-xl bg-emerald-800 text-emerald-300">
+              <div class="absolute -top-4 -left-4 sm:left-2 glass-telemetry-card rounded-2xl p-3 text-xs text-white flex items-center gap-3 animate-float-1 z-20">
+                <div class="p-2 rounded-xl bg-emerald-800/90 text-emerald-300 shadow-sm">
                   <i data-lucide="map" class="w-4 h-4"></i>
                 </div>
                 <div>
-                  <span class="text-[10px] text-slate-400 block font-mono uppercase">Farm Area</span>
-                  <span class="font-bold text-white">25.0 Hectares (61.8 ac)</span>
+                  <span class="text-[10px] text-emerald-400/90 block font-mono uppercase font-semibold">Farm Area</span>
+                  <span class="font-bold text-white tracking-wide">25.0 Hectares (61.8 ac)</span>
                 </div>
               </div>
 
               <!-- Floating Info Card 2: Seed Rate -->
-              <div class="absolute top-1/4 -right-4 bg-slate-900/90 backdrop-blur-md border border-emerald-600/50 rounded-2xl p-3 shadow-xl text-xs text-white flex items-center gap-3 animate-float-delayed">
-                <div class="p-2 rounded-xl bg-emerald-800 text-emerald-300">
+              <div class="absolute top-1/4 -right-4 glass-telemetry-card rounded-2xl p-3 text-xs text-white flex items-center gap-3 animate-float-2 z-20">
+                <div class="p-2 rounded-xl bg-emerald-800/90 text-emerald-300 shadow-sm">
                   <i data-lucide="sprout" class="w-4 h-4"></i>
                 </div>
                 <div>
-                  <span class="text-[10px] text-slate-400 block font-mono uppercase">Seed Rate</span>
-                  <span class="font-bold text-emerald-300">140 kg/ha (92% PLS)</span>
+                  <span class="text-[10px] text-emerald-400/90 block font-mono uppercase font-semibold">Seed Rate</span>
+                  <span class="font-bold text-emerald-300 tracking-wide">140 kg/ha (92% PLS)</span>
                 </div>
               </div>
 
               <!-- Floating Info Card 3: Fertilizer (NPK) -->
-              <div class="absolute bottom-16 -left-4 bg-slate-900/90 backdrop-blur-md border border-emerald-600/50 rounded-2xl p-3 shadow-xl text-xs text-white flex items-center gap-3 animate-float">
-                <div class="p-2 rounded-xl bg-emerald-800 text-emerald-300">
+              <div class="absolute bottom-16 -left-4 glass-telemetry-card rounded-2xl p-3 text-xs text-white flex items-center gap-3 animate-float-3 z-20">
+                <div class="p-2 rounded-xl bg-emerald-800/90 text-emerald-300 shadow-sm">
                   <i data-lucide="flask-conical" class="w-4 h-4"></i>
                 </div>
                 <div>
-                  <span class="text-[10px] text-slate-400 block font-mono uppercase">Fertilizer (NPK)</span>
-                  <span class="font-bold text-white">120N - 60P₂O₅ - 60K₂O</span>
+                  <span class="text-[10px] text-emerald-400/90 block font-mono uppercase font-semibold">Fertilizer (NPK)</span>
+                  <span class="font-bold text-white tracking-wide">120N - 60P₂O₅ - 60K₂O</span>
                 </div>
               </div>
 
               <!-- Floating Info Card 4: Crop Water -->
-              <div class="absolute -bottom-4 right-6 bg-slate-900/90 backdrop-blur-md border border-emerald-600/50 rounded-2xl p-3 shadow-xl text-xs text-white flex items-center gap-3 animate-float-delayed">
-                <div class="p-2 rounded-xl bg-sky-800 text-sky-300">
+              <div class="absolute -bottom-4 right-4 glass-telemetry-card rounded-2xl p-3 text-xs text-white flex items-center gap-3 animate-float-4 z-20">
+                <div class="p-2 rounded-xl bg-sky-800/90 text-sky-300 shadow-sm">
                   <i data-lucide="droplet" class="w-4 h-4"></i>
                 </div>
                 <div>
-                  <span class="text-[10px] text-slate-400 block font-mono uppercase">Crop Water</span>
-                  <span class="font-bold text-sky-300">ETc 5.98 mm/day</span>
+                  <span class="text-[10px] text-sky-400/90 block font-mono uppercase font-semibold">Crop Water</span>
+                  <span class="font-bold text-sky-300 tracking-wide">ETc 5.98 mm/day</span>
                 </div>
               </div>
 
