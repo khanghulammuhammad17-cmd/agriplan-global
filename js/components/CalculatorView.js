@@ -1,6 +1,7 @@
 import { getCalculatorBySlug } from '../data/calculatorsData.js';
 import { renderDynamicFormFields } from './calcForms.js';
 import { executeCalculator, formatResultCards } from './calcRunner.js';
+import { renderSeedRateReelPlayer } from './SeedRateReelPlayer.js';
 
 export function renderCalculatorPage(slug) {
   const calc = getCalculatorBySlug(slug);
@@ -105,9 +106,10 @@ export function renderCalculatorPage(slug) {
             </div>
 
           </div>
-        </div>
-
       </div>
+
+      <!-- Vertical Reel Video Explainer (Seed Rate Calculator Demo) -->
+      ${slug === 'seed-rate-calculator' ? renderSeedRateReelPlayer() : ''}
 
       <!-- Technical & Agronomic Documentation Sections -->
       <div class="space-y-8 border-t border-slate-200 pt-10">

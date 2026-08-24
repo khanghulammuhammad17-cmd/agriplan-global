@@ -5,6 +5,7 @@ import { handleRouting } from './router.js';
 import { getCalculatorBySlug } from './data/calculatorsData.js';
 import { executeCalculator, formatResultCards } from './components/calcRunner.js';
 import { generateCropPlanOutput } from './pages/CropPlannerPage.js';
+import { initSeedRateReelPlayer } from './components/SeedRateReelPlayer.js';
 
 // Initialize Core Application
 document.addEventListener('DOMContentLoaded', () => {
@@ -35,6 +36,9 @@ window.addEventListener('page-rendered', (e) => {
     const slug = calcView.dataset.slug;
     triggerActiveCalculation(slug);
     setupCalculatorEvents(slug);
+    if (slug === 'seed-rate-calculator') {
+      initSeedRateReelPlayer();
+    }
   }
 
   // 2. If crop planner, generate initial default plan
