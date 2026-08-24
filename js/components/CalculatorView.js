@@ -1,6 +1,7 @@
 import { getCalculatorBySlug } from '../data/calculatorsData.js';
 import { renderDynamicFormFields } from './calcForms.js';
 import { executeCalculator, formatResultCards } from './calcRunner.js';
+import { renderSeedRateVideoExplainer } from './SeedRateVideoExplainer.js';
 
 export function renderCalculatorPage(slug) {
   const calc = getCalculatorBySlug(slug);
@@ -35,6 +36,9 @@ export function renderCalculatorPage(slug) {
         <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight font-serif">${calc.h1}</h1>
         <p class="text-base sm:text-lg text-slate-600 mt-3 leading-relaxed max-w-3xl">${calc.intro}</p>
       </div>
+
+      <!-- 3-Part Animated Video & Calculation Explainer (Only for Seed Rate Calculator) -->
+      ${slug === 'seed-rate-calculator' ? renderSeedRateVideoExplainer() : ''}
 
       <!-- Main Calculator Grid: Form + Result Card -->
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12">
