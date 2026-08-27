@@ -1,6 +1,7 @@
 import { getCalculatorBySlug } from '../data/calculatorsData.js';
 import { renderDynamicFormFields } from './calcForms.js';
 import { executeCalculator, formatResultCards } from './calcRunner.js';
+import { renderAffiliateRecommendations } from '../data/affiliateProducts.js';
 
 export function renderCalculatorPage(slug) {
   const calc = getCalculatorBySlug(slug);
@@ -209,6 +210,9 @@ export function renderCalculatorPage(slug) {
             </div>
           </div>
         ` : ''}
+
+        <!-- Precision Equipment & Affiliate Tool Recommendations -->
+        ${renderAffiliateRecommendations(calc.categorySlug)}
 
         <!-- Internal Agronomic Knowledge Hub & Planning Links -->
         <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200 space-y-6">

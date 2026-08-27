@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Footer Component
  * Comprehensive footer with complete internal linking, SEO keywords, and legal disclaimer.
  */
@@ -78,10 +78,13 @@ export function renderFooter() {
 
         </div>
 
-        <!-- Agricultural Legal Disclaimer -->
-        <div class="py-6 border-b border-slate-800/80">
+        <!-- Agricultural Legal Disclaimer & Affiliate Disclosure -->
+        <div class="py-6 border-b border-slate-800/80 space-y-2">
           <p class="text-[11px] text-slate-500 leading-relaxed">
             <strong class="text-slate-400">Agricultural Disclaimer:</strong> Information and calculations provided by this platform are for planning and educational purposes. Actual agricultural decisions depend on local climate, soil conditions, crop variety, management practices, soil-test results, product labels, and local agricultural guidance.
+          </p>
+          <p class="text-[11px] text-slate-500 leading-relaxed">
+            <strong class="text-slate-400">Affiliate Disclosure:</strong> AgriPlan Global is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.
           </p>
         </div>
 
