@@ -176,3 +176,89 @@ export function renderAffiliateRecommendations(categorySlug) {
     </div>
   `;
 }
+
+/**
+ * Mobile-Optimized Featured Tools Showcase for Homepage
+ */
+export function renderHomepageAffiliateShowcase() {
+  const featuredTools = [
+    CATEGORY_AFFILIATE_TOOLS['crops-seed'][0],       // Precision Scale
+    CATEGORY_AFFILIATE_TOOLS['soil-fertility'][0],   // 3-in-1 Soil pH & Moisture Tester
+    CATEGORY_AFFILIATE_TOOLS['water-irrigation'][0], // Drip Irrigation Controller Timer
+    CATEGORY_AFFILIATE_TOOLS['farm-economics'][0]    // Optical Brix Refractometer
+  ];
+
+  return `
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="home-featured-tools-section">
+      <div class="bg-gradient-to-b from-slate-50 to-white rounded-3xl p-6 sm:p-10 border border-slate-200/90 shadow-sm">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-4 border-b border-slate-200 gap-4">
+          <div>
+            <div class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 uppercase tracking-wider font-mono mb-1">
+              <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i>
+              <span>Amazon Associates Verified Equipment</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 font-serif">
+              Featured Precision Agricultural Field Tools
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1">
+              Field-tested diagnostic instruments to pair with your farm calculations for maximum crop yield.
+            </p>
+          </div>
+
+          <span class="inline-flex items-center gap-1.5 text-xs font-semibold bg-emerald-100 text-emerald-800 px-3 py-1.5 rounded-full self-start md:self-auto border border-emerald-200">
+            <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-700"></i>
+            <span>Verified 4.7+ Rating</span>
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          ${featuredTools.map(tool => `
+            <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg hover:border-emerald-500/60 transition-all flex flex-col justify-between group">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="px-2.5 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-emerald-50 text-emerald-800 border border-emerald-200">
+                    ${tool.tag}
+                  </span>
+                  <span class="text-xs font-bold text-slate-900 font-mono">
+                    ${tool.price}
+                  </span>
+                </div>
+
+                <h3 class="text-sm font-bold text-slate-900 group-hover:text-emerald-800 transition-colors line-clamp-2 leading-snug">
+                  ${tool.title}
+                </h3>
+
+                <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
+                  ${tool.desc}
+                </p>
+              </div>
+
+              <div class="mt-5 pt-3 border-t border-slate-100 flex flex-col gap-2.5">
+                <div class="flex items-center justify-between text-xs text-amber-600 font-semibold">
+                  <span>⭐ ${tool.rating}</span>
+                  <span class="text-slate-400 text-[11px]">(${tool.reviews} reviews)</span>
+                </div>
+
+                <a 
+                  href="${getAmazonSearchUrl(tool.keywords)}" 
+                  target="_blank" 
+                  rel="nofollow noopener sponsored" 
+                  class="w-full py-2.5 px-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs shadow-sm hover:shadow transition-all flex items-center justify-center gap-2 text-center"
+                >
+                  <span>Check Price on Amazon</span>
+                  <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                </a>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+
+        <p class="text-[10px] text-slate-600 text-center mt-6">
+          As an Amazon Associate, AgriPlan Global earns from qualifying purchases.
+        </p>
+
+      </div>
+    </section>
+  `;
+}

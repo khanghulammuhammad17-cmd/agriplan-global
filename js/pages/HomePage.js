@@ -3,6 +3,7 @@ import { CROPS_DATA } from '../data/cropsData.js';
 import { GUIDES_DATA } from '../data/guidesData.js';
 import { FAQS_DATA } from '../data/faqsData.js';
 import { renderPrecisionAgVisualizer } from '../components/PrecisionAgVisualizer.js';
+import { renderHomepageAffiliateShowcase } from '../data/affiliateProducts.js';
 
 export function renderHomePage() {
   return `
@@ -236,6 +237,11 @@ export function renderHomePage() {
           `).join('')}
         </div>
       </section>
+
+      <!-- ========================================== -->
+      <!-- 4B. FEATURED PRECISION TOOLS (AMAZON ASSOCIATES) -->
+      <!-- ========================================== -->
+      ${renderHomepageAffiliateShowcase()}
 
       <!-- ========================================== -->
       <!-- 5 & 6. CROP, FRUIT & VEGETABLE CALENDARS PREVIEW -->
