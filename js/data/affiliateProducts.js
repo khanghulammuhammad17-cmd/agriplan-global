@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Curated High-Converting Amazon Affiliate Agricultural Products
  * Partner Tag: agriplangloba-20
  */
@@ -95,14 +95,14 @@ export const CATEGORY_AFFILIATE_TOOLS = {
       icon: 'sparkles'
     },
     {
-      title: 'Heavy-Duty Soil & Compost Probe Thermometer (20-Inch)',
-      desc: 'Monitors deep soil temperature for timely spring planting and winter dormancy management.',
+      title: 'Heavy-Duty Commercial Gas Brushcutter & String Trimmer (52cc)',
+      desc: 'High-torque weed eater and brushcutter for clearing dense brush, tall weeds, and overgrown field boundaries.',
       rating: '4.8',
-      reviews: '2,110',
-      price: '$19.50',
-      tag: 'Field Monitoring',
-      keywords: 'soil thermometer probe long stem planting temperature',
-      icon: 'thermometer'
+      reviews: '1,940',
+      price: '$189.99',
+      tag: 'Field Clearing',
+      keywords: 'heavy duty commercial gas brush cutter weed trimmer string',
+      icon: 'scissors'
     }
   ]
 };
