@@ -85,14 +85,14 @@ export const CATEGORY_AFFILIATE_TOOLS = {
   // Category 4: Farm Economics & Harvest Planning
   'farm-economics': [
     {
-      title: 'Professional Optical Brix Refractometer (0-32% Sugar)',
-      desc: 'Measures fruit, vegetable, and crop sap sweetness to determine exact optimal harvest timing.',
-      rating: '4.9',
-      reviews: '3,650',
-      price: '$22.99',
-      tag: 'Harvest Timing',
-      keywords: 'brix refractometer 0 32 fruit sugar harvest testing',
-      icon: 'sparkles'
+      title: 'Handheld GPS Land Area Meter & Tractor Field Acreage Tracker',
+      desc: 'High-precision GNSS tracker for measuring farm field boundaries, acreage, track lines, and slope terrain.',
+      rating: '4.8',
+      reviews: '1,420',
+      price: '$129.99',
+      tag: 'Field GPS Tracker',
+      keywords: 'handheld gps land meter farm field area measurement tractor acreage tracker',
+      icon: 'map-pin'
     },
     {
       title: 'Heavy-Duty Commercial Gas Brushcutter & String Trimmer (52cc)',
